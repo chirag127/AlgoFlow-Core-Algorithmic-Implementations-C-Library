@@ -1,0 +1,100 @@
+/* Glassmorphism UI */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+header.glass h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+header.glass p {
+    font-size: 1.1rem;
+    color: #34495e;
+    margin-bottom: 1.5rem;
+}
+
+a.cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: rgba(255, 255, 255, 0.4);
+    color: #2c3e50;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+a.cta:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+section.content ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+section.content li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+footer.footer {
+    font-size: 0.9rem;
+    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer.footer a {
+    color: #2c3e50;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer.footer a:hover {
+    text-decoration: underline;
+}
+
+pre {
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background: rgba(255,255,255,0.2);
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+}

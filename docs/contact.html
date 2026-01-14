@@ -1,0 +1,137 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact page for Design and Analysis of Algorithm Lab project. Reach out to developer Chirag Singhal for queries or contributions." />
+  <title>Contact | DAA Lab Project</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Inline styles for glassmorphism and custom effects -->
+  <style>
+    body {
+      @apply bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen flex flex-col;
+    }
+    .glass {
+      @apply bg-white bg-opacity-10 backdrop-blur-lg rounded-xl shadow-2xl border border-white border-opacity-20;
+    }
+    .glass:hover {
+      @apply bg-opacity-15 transition-all duration-300;
+    }
+    .form-input, .form-textarea {
+      @apply bg-white bg-opacity-20 backdrop-blur-sm placeholder-white placeholder-opacity-70 text-white focus:outline-none focus:ring-2 focus:ring-purple-400 rounded-lg p-3 w-full;
+    }
+    .btn-submit {
+      @apply bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-300;
+    }
+    footer {
+      @apply text-center text-gray-400 text-sm py-4 mt-auto;
+    }
+    .social-icon {
+      @apply text-white hover:text-purple-300 transition-colors duration-200 text-xl;
+    }
+  </style>
+</head>
+<body class="font-sans leading-relaxed tracking-wide text-gray-200">
+  <!-- Header -->
+  <header class="py-8 px-6 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-300">
+      Contact Me
+    </h1>
+    <p class="mt-3 text-lg text-gray-300 max-w-2xl mx-auto">
+      Have questions about the DAA Lab implementations? Feel free to reach out!
+    </p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow px-6 py-8">
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+
+      <!-- Contact Info Card -->
+      <div class="glass p-8 space-y-6">
+        <h2 class="text-2xl font-semibold text-white border-b border-purple-400 pb-2">Get in Touch</h2>
+        <p class="text-gray-200">
+          I'm always open to discussing new projects, collaborations, or helping students with algorithm concepts.
+        </p>
+
+        <div class="space-y-4">
+          <div class="flex items-center space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <a href="mailto:chiragsinghal127@gmail.com" class="text-gray-200 hover:text-purple-300 transition-colors duration-200">
+              chiragsinghal127@gmail.com
+            </a>
+          </div>
+
+          <div class="flex items-center space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span class="text-gray-200">Bhubaneswar, Odisha, India</span>
+          </div>
+
+          <div class="flex items-center space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+            <span class="text-gray-200">B.Tech in CSE (8.81 CGPA)</span>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="flex space-x-5 mt-6">
+          <a href="https://github.com/chirag127" target="_blank" class="social-icon" aria-label="GitHub">
+            <i class="fab fa-github"></i>GitHub
+          </a>
+          <a href="https://linkedin.com/in/chirag-singhal1" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>LinkedIn
+          </a>
+          <a href="https://buymeacoffee.com/WhyIsWhen" target="_blank" class="social-icon" aria-label="Buy Me a Coffee">
+            <i class="fas fa-coffee"></i>Buy Me a Coffee
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="glass p-8">
+        <h2 class="text-2xl font-semibold text-white border-b border-purple-400 pb-2">Send a Message</h2>
+        <form class="mt-6 space-y-5" action="https://formspree.io/f/your-form-id" method="POST">
+          <div>
+            <label for="name" class="block text-gray-200 text-sm font-medium mb-1">Your Name</label>
+            <input type="text" id="name" name="name" required class="form-input" placeholder="John Doe" />
+          </div>
+          <div>
+            <label for="email" class="block text-gray-200 text-sm font-medium mb-1">Your Email</label>
+            <input type="email" id="email" name="email" required class="form-input" placeholder="you@example.com" />
+          </div>
+          <div>
+            <label for="subject" class="block text-gray-200 text-sm font-medium mb-1">Subject</label>
+            <input type="text" id="subject" name="subject" required class="form-input" placeholder="Regarding DAA Lab Project" />
+          </div>
+          <div>
+            <label for="message" class="block text-gray-200 text-sm font-medium mb-1">Message</label>
+            <textarea id="message" name="message" rows="5" required class="form-textarea" placeholder="Your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit w-full md:w-auto">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright (c) 2026 Chirag Singhal | Designed by Chirag Singhal</p>
+  </footer>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
+```
+
+> 💡 **Note**: Replace `https://formspree.io/f/your-form-id` with your actual [Formspree](https://formspree.io/) endpoint or another form submission service to make the contact form functional. This template uses Formspree for simplicity and requires no backend.
